@@ -16,7 +16,7 @@ Use BeautifulSoup4, Selenium,webdriver to craw the data from taoba. then save an
 
 Here are some points of my code.
 
-##### 1. About dynamic data on the page
+##### Ⅰ. About dynamic data on the page
 
 ```python
 driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
@@ -26,7 +26,7 @@ driver.execute_script("var q=document.documentElement.scrollTop=0")
 
 Because a part of  data in this website is loaded by javascript, I use selenium to control the browser scrolling up and down for loading and getting all the data from the page. I hope someone can find better idea to finish this job. If you have a better idea please contact me. I'd like to improve the efficiency of this code 
 
-##### 2.About save data
+##### Ⅱ. About save data
 
 ```python
 def write_in_excel(name):#写入excel
@@ -47,7 +47,7 @@ def write_in_excel(name):#写入excel
 
 Write all my code to an excel.
 
-##### 3.About ranking
+##### Ⅲ. About ranking
 
 ```python
 result = sorted(data_dict.items(), key=lambda x: x[1], reverse=True)
@@ -55,7 +55,7 @@ result = sorted(data_dict.items(), key=lambda x: x[1], reverse=True)
 
 To rank the id by money every id contribute.
 
-##### 4.How to use
+##### Ⅳ. How to use
 
 In main function, input your links to url_list[]. There are two available ways. One is 
 
